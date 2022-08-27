@@ -21,7 +21,8 @@
         "composer/installers": "^1.9",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
-        "drupal/core-recommended": "^9.4"
+        "drupal/core-recommended": "^9.4",
+        "mikemadison13/blt-lando": "dev-main"
     },
     "conflict": {
         "drupal/drupal": "*"
