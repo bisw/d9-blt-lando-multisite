@@ -1,2 +1,8 @@
 project:
   machine_name: d9-blt-lando-multisite
+  human_name: 'D9 BLT Lando Multisite'
+  profile:
+    name: standard
+  local:
+    protocol: http
+    hostname: local.${project.machine_name}.lndo.site
