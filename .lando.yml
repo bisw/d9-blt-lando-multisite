@@ -5,6 +5,15 @@ config:
   xdebug: false
   php: '8.1'
   drush: ^9
+proxy:
+  appserver:
+    - local.d9-blt-lando-multisite.lndo.site
+    - local.dolphinblueprint-novartis-digital.lndo.site
+    - local.ask-alia.com.au.lndo.site
+  pma:
+    - pma.novartis-dolphin.lndo.site
+  search:
+    - solr.novartis-dolphin.lndo.site:8983
 services:
   appserver:
     xdebug: false
@@ -27,6 +36,40 @@ services:
       environment:
         PHP_IDE_CONFIG: "serverName=appserver"
         SSH_AUTH_SOCK: /run/host-services/ssh-auth.sock
+  search:
+    type: solr:7
+    core: drupal_dolphin
+    portforward: true
+    config:
+      conf: docroot/modules/contrib/search_api_solr/jump-start/solr7/config-set
+      dir: docroot/modules/contrib/search_api_solr/jump-start/solr7/config-set
+  drupal_dolphin:
+    type: mysql:5.7
+    portforward: true
+    creds:
+      user: drupal
+      password: drupal
+      database: drupal_dolphin
+  dolphinblueprint_novartis_digital:
+    type: mysql:5.7
+    portforward: true
+    creds:
+      user: drupal
+      password: drupal
+      database: dolphinblueprint_novartis_digital
+  ask_alia_com_au:
+    type: mysql:5.7
+    portforward: true
+    creds:
+      user: drupal
+      password: drupal
+      database: ask_alia_com_au
+  pma:
+    type: phpmyadmin
+    hosts:
+      - drupal_dolphin
+      - dolphinblueprint_novartis_digital
+      - ask_alia_com_au
 tooling:
   blt:
     service: appserver

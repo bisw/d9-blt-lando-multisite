@@ -1,0 +1,17 @@
+project:
+  local:
+    hostname: local.ask_alia_com_au.lndo.site
+    protocol: http
+  machine_name: ask_alia_com_au
+  human_name: ask_alia_com_au
+drush:
+  aliases:
+    local: ask_alia_com_au.local
+    remote: ask_alia_com_au.remote
+drupal:
+  db:
+    database: ask_alia_com_au
+    username: drupal
+    password: drupal
+    host: ask_alia_com_au
+    port: 3306

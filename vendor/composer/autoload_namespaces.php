@@ -20,5 +20,5 @@ return array(
     'Behat\\MinkExtension' => array($vendorDir . '/behat/mink-extension/src', $vendorDir . '/friends-of-behat/mink-extension/src'),
     'Behat\\Gherkin' => array($vendorDir . '/behat/gherkin/src'),
     'Archive_Tar' => array($vendorDir . '/pear/archive_tar'),
-    '' => array($vendorDir . '/pear/pear-core-minimal/src', $vendorDir . '/bex/behat-extension-driver-locator/src'),
+    '' => array($vendorDir . '/bex/behat-extension-driver-locator/src', $vendorDir . '/pear/pear-core-minimal/src'),
 );

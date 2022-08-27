@@ -1,0 +1,18 @@
+project:
+  local:
+    hostname: local.d9-blt-lando-multisite.lndo.site
+    protocol: http
+  machine_name: d9-blt-lando-multisite
+  human_name: d9-blt-lando-multisite
+drush:
+  aliases:
+    local: self
+    remote: novartis-dolphin-emea.dev
+drupal:
+  db:
+    database: acquia
+    username: acquia
+    password: acquia
+    host: database
+    port: 3306
+  cloud_db: novartisconsumeremea

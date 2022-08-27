@@ -1,0 +1,17 @@
+project:
+  local:
+    hostname: local.dolphinblueprint_novartis_digital.lndo.site
+    protocol: http
+  machine_name: dolphinblueprint_novartis_digital
+  human_name: dolphinblueprint_novartis_digital
+drush:
+  aliases:
+    local: dolphinblueprint_novartis_digital.local
+    remote: dolphinblueprint_novartis_digital.remote
+drupal:
+  db:
+    database: dolphinblueprint_novartis_digital
+    username: drupal
+    password: drupal
+    host: dolphinblueprint_novartis_digital
+    port: 3306

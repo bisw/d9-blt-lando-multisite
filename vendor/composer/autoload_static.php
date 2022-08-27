@@ -639,8 +639,8 @@ class ComposerStaticInit2c4b778b6f4b16d89e6a0521b782b4fc
         'Behat\\Mink\\Driver\\' => 
         array (
             0 => __DIR__ . '/..' . '/behat/mink-browserkit-driver/src',
-            1 => __DIR__ . '/..' . '/behat/mink-selenium2-driver/src',
-            2 => __DIR__ . '/..' . '/behat/mink-goutte-driver/src',
+            1 => __DIR__ . '/..' . '/behat/mink-goutte-driver/src',
+            2 => __DIR__ . '/..' . '/behat/mink-selenium2-driver/src',
         ),
         'Behat\\Mink\\' => 
         array (
@@ -782,8 +782,8 @@ class ComposerStaticInit2c4b778b6f4b16d89e6a0521b782b4fc
     );
 
     public static $fallbackDirsPsr0 = array (
-        0 => __DIR__ . '/..' . '/pear/pear-core-minimal/src',
-        1 => __DIR__ . '/..' . '/bex/behat-extension-driver-locator/src',
+        0 => __DIR__ . '/..' . '/bex/behat-extension-driver-locator/src',
+        1 => __DIR__ . '/..' . '/pear/pear-core-minimal/src',
     );
 
     public static $classMap = array (
