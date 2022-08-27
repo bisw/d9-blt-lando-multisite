@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset -->
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../vendor/squizlabs/php_codesniffer/phpcs.xsd"
+         name="AcquiaEdge"
+>
+
+  <description>Acquia's Edge (backwards-incompatible) coding standards.</description>
+
+  <!-- Acquia PHP sniffs -->
+  <rule ref="AcquiaPHP"/>
+
+  <!-- Drupal sniffs -->
+  <rule ref="Drupal.Classes.ClassDeclaration" />
+  <rule ref="Drupal.Classes.UnusedUseStatement"/>
+  <rule ref="Drupal.Functions.FunctionDeclaration" />
+  <!-- https://www.php-fig.org/psr/psr-12/#5-control-structures -->
+  <rule ref="Drupal.ControlStructures.ControlSignature" />
+  <rule ref="PSR12.Functions.ReturnTypeDeclaration" />
+
+</ruleset>

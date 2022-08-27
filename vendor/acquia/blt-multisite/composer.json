@@ -1,0 +1,23 @@
+{
+    "name": "acquia/blt-multisite",
+    "description": "A recipe for generating multisites with Acquia BLT",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Acquia Engineering",
+            "homepage": "https://www.acquia.com",
+            "role": "Maintainer"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Acquia\\BltMultisite\\": "./src/"
+        }
+    },
+    "require-dev": {
+        "acquia/blt": "^13.2"
+    }
+}
